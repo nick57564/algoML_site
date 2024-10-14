@@ -23,7 +23,7 @@ body {
     repeating-linear-gradient(
         to right, transparent 0 500px, #083461 500px 501px
     );
-    background-size: 100%;
+    background-size: 130%;
 }
 *::-webkit-scrollbar {
     width: 0;
@@ -176,37 +176,94 @@ header .content-fit nav ul{
     font-size: 10em;
 }
 
-@media screen and (max-width: 1023px){
+
+@media (max-width: 600px) {
+    .logo {
+        width: 20%; 
+    }
     #banner .title {
-        font-size: 5em;
-    }
-    #intro .content-fit {
-        flex-direction: column;
-    }
-}
-@media screen and (max-width: 767px){
-    #banner .title {
-        font-size: 3em;
-    }
-    #intro .content-fit {
-        flex-direction: column;
+        font-size: 4em; 
     }
     .section .number {
         font-size: 5em;
     }
     .section .content-fit .title {
-        font-size: 2em;
+        font-size: 200%;
     }
-    #description .content-fit {
-        padding-right: 0;
+    #description .number {
+        font-size: 3em;
+    }
+    #description .title {
+        font-size: 4em;
     }
     #contact table {
-        font-size: 1em;
+        font-size: 1.2em;
     }
     #contact .sign {
-        font-size: 2em;
+        font-size: 5em;
     }
-    #container3D {
-        position: absolute;
+    .decorate {
+        bottom: -5% !important;
+        width: 55% !important;
+    }
+    body {
+        background-image:
+        url("/static/IM/bg.png"),
+        repeating-linear-gradient(
+            to right, transparent 0 0px, #083461 100% 100%
+        ) !important;
+        background-size: 250% !important;
+    }
+    #banner .title::before {
+        font-size: 90%;
+        color: #083461; 
+        margin-top: 30%;
+    }
+}
+
+@media (max-width: 900px) {
+    .logo {
+        width: 15%; 
+    }
+    #banner .title {
+        font-size: 8em; 
+    }
+    .section .number {
+        font-size: 10em;
+    }
+    .section .content-fit .title {
+        font-size: 300%;
+    }
+    #description .number {
+        font-size: 4em;
+    }
+    #description .title {
+        font-size: 5em;
+    }
+    #contact table {
+        font-size: 1.5em;
+    }
+    #contact .sign {
+        font-size: 8em;
+    }
+    .decorate {
+        bottom: -5% !important;
+        width: 55% !important;
+    }
+    .decorate_qr {
+        width: 1% !important;
+    }
+    body {
+        background-image:
+        url("/static/IM/bg.png"),
+        repeating-linear-gradient(
+            to right, transparent 0 0px, #083461 100% 100%
+        ) !important;
+        background-size: 250% !important;
+    }
+    #banner .title::before {
+        font-size: 90%;
+        color: #083461; 
+        margin-top: 30%;
     }
 }
