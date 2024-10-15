@@ -21,7 +21,7 @@ body {
     background-image:
     url("/static/IM/bg.png"),
     repeating-linear-gradient(
-        to right, transparent 0 500px, #083461 500px 501px
+        to right, transparent 0 0px, #083461 100% 100%
     );
     background-size: 130%;
 }
