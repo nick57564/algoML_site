@@ -69,8 +69,22 @@ header {
         to right, transparent 0 500px, #083461 500px 501px
     );
 }
+
+header nav ul {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+    display: flex; 
+}
+
 header nav ul li {
+    margin-left: 20%;
+    display: flex; 
+}
+
+header nav ul li a.nav-link {
     color: white; 
+    text-decoration: none; 
 }
 
 
@@ -80,10 +94,6 @@ header .content-fit {
     align-items: center;
     min-height: unset!important;
     padding-block: unset!important;
-}
-header .content-fit nav ul{
-    display: flex;
-    gap: 2em;
 }
 
 #banner .title {

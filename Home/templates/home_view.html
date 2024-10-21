@@ -14,11 +14,11 @@
     <header>
         <div class="content-fit">
             <img src="{% static 'IM/logo_blue.png' %}" alt="logo" class="logo">
-            <nav>
+            <nav class="nav-bar">
                 <ul>
-                    <li>Projects</li>
-                    <li>Contact</li>
-                    <li>Algo-ML</li>
+                    <li><a class="nav-link" href="{% url 'chat' %}">Chatbot</a></li>
+                    <li><a class="nav-link" href="{% url 'chat' %}">Home</a></li>
+                    <li><a class="nav-link" href="{% url 'chat' %}">Projects</a></li>
                 </ul>
             </nav>
         </div>
